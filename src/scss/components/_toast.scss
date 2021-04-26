@@ -1,0 +1,10 @@
+// .v-toast__item--success
+@import "./../base/theming";
+
+@each $name, $color in $theme {
+  .v-toast__item--#{"" + $name} {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    background-color: $color !important;
+  }
+}
